@@ -8,7 +8,7 @@ export default function Sims() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch("http://localhost:3001/data");
+        const res = await fetch("http://192.168.45.205:3001/data");
         if (res.status === 401) {
           navigate("/"); // si no hay login, volver a /
           return;
