@@ -7,7 +7,7 @@ app.use(express.json());
 
 // 🚀 habilitar CORS para permitir que React (5173) hable con el back
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "http://192.168.45.205:5173",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
